@@ -1,4 +1,4 @@
-# Strange Case - Bootstrap Version of Hyde for Hugo
+# Strange Case - Bootstrap Clone of Hyde for Hugo
 
 Strange Case was built for people who like the original Jekyll theme [Hyde](https://github.com/poole/hyde) and its [port to Hugo](https://github.com/spf13/hyde) but prefer to use [Bootstrap](http://getbootstrap.com).
 
