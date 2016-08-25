@@ -96,9 +96,9 @@ Using a theme is as simple as changing the `colorScheme` param in your `config.t
 		sidebarFreeText = "A optional paragraph of free text. Set to blank in config.toml to clear..."
 
 
-#### Creating Your Own Theme
+#### Creating Your Own Color Scheme
 
-To create your own custom theme simply scroll to the end of the `strange-case.css` stylesheet in the `your-hugo-dir/themes/strange-case/static` folder and edit the template we've left there.
+To create your own custom color scheme simply scroll to the end of the `strange-case.css` stylesheet in the `your-hugo-dir/themes/strange-case/static` folder and edit the template we've left there.
 
 We'll happily accept pull requests for quality color schemes.
 
