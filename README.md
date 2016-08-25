@@ -2,7 +2,7 @@
 
 Strange Case was built for people who like the original Jekyll theme [Hyde](https://github.com/poole/hyde) and its [port to Hugo](https://github.com/spf13/hyde) but prefer to use [Bootstrap](http://getbootstrap.com).
 
-The theme was built from an empty Bootstrap 3 template with the goal of easy modifcation for end users. The code is as simple as possible - clearly formatted HTML and a single stylesheet. It's a two column responsive design and currently includes version 3.3.7 of Bootstrap.
+The theme was built from an empty Bootstrap 3 template with the goal of easy modification for end users. The code is as simple as possible - clearly formatted HTML and a single stylesheet. It's a two column responsive design and currently includes version 3.3.7 of Bootstrap.
 
 Pull requests are welcome.
 
@@ -16,6 +16,7 @@ Pull requests are welcome.
   - [Sidebar](#sidebar)
   - [Color Schemes](#color-schemes)
   - [Analytics](#analytics)
+  - [Example Config](#example-config)
 - [Author](#author)
 - [Inspired By](#inspired-by)
 - [License](#license)
@@ -115,7 +116,7 @@ For Google Analytics, simply set your UA number in your `config.toml` file. Exam
 
 	googleAnalytics = "UA-123-456"
 
-For Piwik, set the following two `params` options as below:
+For Piwik, set the following two `params` as below:
 
 	baseurl = "/blog"
 	title = "Strange Case Hugo Theme"
@@ -126,6 +127,41 @@ For Piwik, set the following two `params` options as below:
 		colorScheme = "scheme-darkbrown"
 		piwikSiteID = "1234"
 		piwikURL = "www.your-site.com"
+
+
+## Example Config
+
+Here is a full example `config.toml`:
+
+	baseurl = "http://www.your-blog.com"
+	title = "Your Blog Title"
+	author = "You"
+	copyright = "Your Copyright"
+	canonifyurls = true
+	paginate = 5
+
+	googleAnalytics = ""
+
+	theme = "strange-case"
+
+	[params]
+		colorScheme = "scheme-darkbrown"
+		DateFormat = "2 Jan 2006"
+		description = "A blog about content"
+		sidebarDescription = "This is my blog about content"
+		sidebarFreeText = "A optional paragraph of free text. Set to blank in config.toml to clear..."
+		piwikSiteID = ""
+		piwikURL = ""
+
+	[[menu.main]]
+		name = "Hugo"
+		post = "<span class='glyphicon glyphicon-fire'></span>"
+		url = "http://gohugo.io"
+
+	[[menu.main]]
+		name = "Bootstrap"
+		post = "<span class='glyphicon glyphicon-ok'></span>"
+		url = "http://getbootstrap.com"
 
 
 ## Author
