@@ -1,0 +1,21 @@
+# theme.toml template for a Hugo theme
+# See https://github.com/spf13/hugoThemes#themetoml for an example
+
+name = "Strange Case"
+license = "MIT"
+licenselink = "https://github.com/ExchangeRate-API/strange-case/LICENSE.md"
+description = "A 2 column blog theme for Hugo using Bootstrap - inspired by the Jekyll theme Hyde by mdo"
+homepage = "https://github.com/ExchangeRate-API/strange-case"
+tags = ["", ""]
+features = ["", ""]
+min_version = 0.15
+
+[author]
+	name = "ExchangeRate-API"
+	homepage = "https://www.exchangerate-api.com"
+
+# If porting an existing theme
+[original]
+	name = ""
+	homepage = ""
+	repo = ""

@@ -1,0 +1,31 @@
+
+	<div class="sidebar-content">
+
+		<a href="{{ .Site.BaseURL }}"><h1>{{ .Site.Title }}</h1></a>
+		<p>{{ .Site.Params.description }}</p>
+
+		{{ if .Site.Params.sidebarFreeText }}
+		<div class="sidebar-freetext">
+			<p>{{ .Site.Params.sidebarFreeText }}</p>
+		</div>
+		{{ end }}
+
+		<ul class="sidebar-menus">
+			{{ range .Site.Menus.main }}
+				<li>&#187; <a href="{{.URL}}">{{ .Name }}</a> {{ .Post }}</li>
+			{{end}}
+		</ul>
+
+		<div class="sidebar-recent hidden-xs">
+			<p>Recent Posts:</p>
+			<ul>
+				{{ range first 5 .Site.Pages }}
+				<li><a href="{{.Permalink}}">{{ .Title }}</a></li>
+				{{ end }}
+			</ul>
+		</div>
+
+		<p class="copyright">{{ with .Site.Params.copyright }}{{.}}{{ else }}&copy; {{.Now.Format "2006"}}. All rights reserved. {{end}}</p>
+		<p class="attr">Powered by <a href="http://http://gohugo.io">Hugo</a> &amp; <a href="https://github.com/ExchangeRate-API/strange-case">Strange Case</a> (inspired by <a href="https://github.com/poole/hyde">Hyde</a>).</p>
+
+	</div>

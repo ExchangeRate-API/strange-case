@@ -1,0 +1,28 @@
+{{ partial "header.html" . }}
+
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-sm-4 col-md-3 col-lg-3 sidebar">
+
+			{{ partial "sidebar-content.html" . }}
+
+			</div>
+			<div class="col-sm-7 col-sm-offset-4 col-md-6 col-md-offset-3 col-lg-5 col-lg-offset-3 content">
+
+				<div class="post">
+
+					<div class="post-heading">
+						<h1>404 Not Found</h1>
+						<p>Unfortunately we couldn't find the page you requested.</p>
+						<p><a href="{{ .Site.BaseURL }}">Return to {{ .Site.Title }}</a></p>
+					</div>
+
+				</div>
+
+			</div>
+			<div class="col-sm-1 col-md-3 col-md-4">
+			</div>
+		</div>
+	</div>
+
+{{ partial "footer.html" . }}

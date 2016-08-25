@@ -1,0 +1,159 @@
+# Strange Case
+
+Strange Case was built for people who like the original Jekyll theme [Hyde](https://github.com/poole/hyde) and its [port to Hugo](https://github.com/spf13/hyde) but prefer to use [Bootstrap](http://getbootstrap.com).
+
+The theme was built from an empty Bootstrap 3 template with the goal of easy modifcation for end users. The code is as simple as possible - clearly formatted HTML and a single stylesheet. It's a two column responsive design and currently includes version 3.3.7 of Bootstrap.
+
+Pull requests are welcome.
+
+![Strange Case Screenshot](http://i.imgur.com/i7aarpG.png)
+
+
+## Contents
+
+- [Installation](#installation)
+- [Customization](#customization)
+  - [Sidebar](#sidebar)
+  - [Color Schemes](#color-schemes)
+  - [Analytics](#analytics)
+- [Author](#author)
+- [Inspired By](#inspired-by)
+- [License](#license)
+
+
+## Installation
+
+Installing **Strange Case** is easy. Simple clone this repo to `themes/` in your Hugo folder.
+
+    ~$ cd your-hugo-folder/themes/
+    ~$ git clone https://github.com/ExchangeRate-API/strange-case.git
+
+Next, open the `config.toml` file in the base of the Hugo folder and ensure the theme is set to `strange-case`.
+
+    theme = "strange-case"
+
+
+## Customization
+
+There are various options you can easily set from your `config.toml` file.
+
+This text will appear after the Title of your site in your `<title>` meta tag:
+
+	description = "A Hugo Theme built with Bootstrap"
+
+
+### Sidebar
+
+This text will appear in the sidebar immediately under your site's Title:
+
+	sidebarDescription = "A Hugo Theme built with Bootstrap"
+
+This text will appear in a free paragraph below the Title & sidebarDescription and above the menu links. Set it to "" if you don't want it.
+
+	sidebarFreeText = "A optional paragraph of free text. Set to blank in config.toml to clear..."
+
+You can also include useful menu links by including `"menu=main"` items in your `config.toml`. Example:
+
+	[[menu.main]]
+		name = "Hugo"
+		post = "<span class='glyphicon glyphicon-fire'></span>"
+		url = "http://gohugo.io"
+
+You can optionally use the `pre` and `post` vars to include HTML before or after the `name` in the resulting links.
+
+
+### Color Schemes
+
+In keeping with our attempt to replicate the original Hyde in Bootstrap we've included some colour scheme options. These are not the same as in the original, but we used palettes from the same [Base16](https://github.com/chriskempson/base16) project.
+
+![Strange Case in Light Brown](http://i.imgur.com/oLjV8LV.png)
+
+The themes are:
+
+- Dark Brown (`colorScheme="scheme-darkbrown"`)
+- Light Brown (`colorScheme="scheme-lightbrown"`)
+- Green (`colorScheme="scheme-green"`)
+- Orange (`colorScheme="scheme-orange"`)
+- Slate (`colorScheme="scheme-slate"`)
+
+And then a bonus theme that isn't from Base16:
+
+- Gulf Racing (`colorScheme="scheme-gulfracing"`)
+
+Using a theme is as simple as changing the `colorScheme` param in your `config.toml`. Example:
+
+	baseurl = "/blog"
+	title = "Strange Case Hugo Theme"
+
+	theme = "strange-case"
+
+	[params]
+		colorScheme = "scheme-darkbrown"
+		DateFormat = "2 Jan 2006"
+		description = "A Hugo Theme built with Bootstrap"
+		sidebarDescription = "A Hugo Theme built with Bootstrap"
+		sidebarFreeText = "A optional paragraph of free text. Set to blank in config.toml to clear..."
+
+
+#### Creating Your Own Theme
+
+To create your own custom theme simply scroll to the end of the `strange-case.css` stylesheet in the `your-hugo-dir/themes/strange-case/static` folder and edit the template we've left there.
+
+We'll happily accept pull requests for quality color schemes.
+
+
+### Analytics
+
+This theme supports Hugo's native GA integration & a Piwik integration.
+
+For Google Analytics, simply set your UA number in your `config.toml` file. Example:
+
+	baseurl = "/blog"
+	title = "Strange Case Hugo Theme"
+
+	theme = "strange-case"
+
+	googleAnalytics = "UA-123-456"
+
+For Piwik, set the following two `params` options as below:
+
+	baseurl = "/blog"
+	title = "Strange Case Hugo Theme"
+
+	theme = "strange-case"
+
+	[params]
+		colorScheme = "scheme-darkbrown"
+		piwikSiteID = "1234"
+		piwikURL = "www.your-site.com"
+
+
+## Author
+
+**ExchangeRate-API.com**
+
+- <https://github.com/ExchangeRate-API/>
+- <https://www.exchangerate-api.com>
+
+#### Strange Case Uses Bootstrap
+
+**Bootstrap**
+
+ - <http://getbootstrap.com>
+
+## Inspired By
+
+**Mark Otto** - creator of the Hyde Jekyll theme
+
+- <https://github.com/mdo>
+- <https://twitter.com/mdo>
+
+**Steve Francia** - porter of the original Hyde theme to Hugo
+
+- <https://github.com/spf13>
+- <https://twitter.com/spf13>
+
+
+## Licensing
+
+This theme is released under the [MIT License](LICENSE.md).
