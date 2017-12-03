@@ -9,7 +9,7 @@
 			</div>
 			<div class="col-sm-7 col-sm-offset-4 col-md-6 col-md-offset-3 col-lg-5 col-lg-offset-3 content">
 
-				{{ range first 10 .Data.Pages }}
+				{{ range .Paginator.Pages }}
 				<div class="post">
 
 					<div class="post-heading">
@@ -21,6 +21,10 @@
 
 				</div>
 				{{ end }}
+
+				<div class="text-center">
+					{{ template "_internal/pagination.html" . }}
+				</div>
 
 			</div>
 			<div class="col-sm-1 col-md-3 col-md-4">
