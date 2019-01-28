@@ -1,13 +1,13 @@
 
 /*
- * 
+ *
  * Strange Case
  * ------------
- * 
+ *
  * Built by ExchangeRate-API with Bootstrap - inspired by
  * Hyde (https://github.com/mdo/hyde) for Hugo.
- * 
- * 
+ *
+ *
  * CSS SECTIONS
  *
  * Defaults
@@ -101,6 +101,11 @@ p {
 .sidebar .sidebar-menus li a {
 	text-decoration:underline;
 }
+.sidebar .sidebar-contact {
+	padding-left: 0;
+	margin-left: 0;
+	margin-top: 1.5em;
+}
 @media (min-width: 768px) {
 	.sidebar {
 		top: 0;
@@ -189,7 +194,7 @@ p.attr {
 	color: #9a9a9a;
 }*/
 
-/* 
+/*
  * The original Hyde theme uses Base16 for colour schemes so
  * we decided to also use this project. We picked different
  * colors though. We also used the Ocean and 80's palettes in

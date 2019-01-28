@@ -62,6 +62,8 @@ You can also include useful menu links by including `"menu=main"` items in your 
 
 You can optionally use the `pre` and `post` vars to include HTML before or after the `name` in the resulting links.
 
+You can use the `"contact_email"` `[param]` to set a mailto: link the in the sidebar. Leave blank if you don't want it.
+
 
 ### Color Schemes
 

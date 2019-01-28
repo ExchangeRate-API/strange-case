@@ -25,6 +25,12 @@
 			</ul>
 		</div>
 
+		{{ if .Site.Params.contact_email }}
+		<div class="sidebar-contact">
+			&#187; <a href="mailto:{{ .Site.Params.contact_email }}">Email Us</a>
+		</div>
+		{{ end }}
+
 		<p class="copyright">{{ with .Site.Params.copyright }}{{ . }}{{ else }}&copy; {{ now.Format "2006" }}. All rights reserved. {{end}}</p>
 		<p class="attr">Powered by <a href="http://gohugo.io">Hugo</a> &amp; <a href="https://github.com/ExchangeRate-API/strange-case">Strange Case</a> (inspired by <a href="https://github.com/poole/hyde">Hyde</a>).</p>
 
