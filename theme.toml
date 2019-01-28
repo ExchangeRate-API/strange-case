@@ -6,9 +6,9 @@ license = "MIT"
 licenselink = "https://github.com/ExchangeRate-API/strange-case/LICENSE.md"
 description = "A 2 column blog theme for Hugo using Bootstrap - inspired by the Jekyll theme Hyde by mdo"
 homepage = "https://github.com/ExchangeRate-API/strange-case"
-tags = ["", ""]
-features = ["", ""]
-min_version = 0.15
+tags = ["Blog", "Responsive", "Minimal", "Simple", "Clean", "Bootstrap"]
+features = ["Blog", "Responsive", "Bootstrap"]
+min_version = 0.53
 
 [author]
 	name = "ExchangeRate-API"
