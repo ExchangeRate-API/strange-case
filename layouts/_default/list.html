@@ -14,7 +14,7 @@
 
 					<div class="post-heading">
 						<h1><a href="{{ .Permalink }}">{{ .Title }}</a></h1>
-						<span>{{ .Date.Format .Site.Params.DateFormat }}{{ if .Params.author }} by {{ .Params.author }}{{ end }}</span>
+						<span>{{ .Date.Format "Jan 2, 2006" }}{{ if .Params.author }} by {{ .Params.author }}{{ end }}</span>
 					</div>
 
 					{{ .Content }}
