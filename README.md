@@ -6,7 +6,7 @@ The theme was built from an empty Bootstrap 3 template with the goal of easy mod
 
 Pull requests are welcome.
 
-![Strange Case Screenshot](http://i.imgur.com/i7aarpG.png)
+![Strange Case Screenshot](https://i.imgur.com/i7aarpG.png)
 
 
 ## Contents
@@ -69,7 +69,7 @@ You can use the `"contact_email"` field in `[params]` to set a mailto: link the 
 
 In keeping with our attempt to replicate the original Hyde in Bootstrap we've included some colour scheme options. These are not the same as in the original, but we used palettes from the same [Base16](https://github.com/chriskempson/base16) project.
 
-![Strange Case in Light Brown](http://i.imgur.com/oLjV8LV.png)
+![Strange Case in Light Brown](https://i.imgur.com/oLjV8LV.png)
 
 The themes are:
 
