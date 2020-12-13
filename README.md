@@ -38,18 +38,14 @@ Next, open the `config.toml` file in the base of the Hugo folder and ensure the 
 
 There are various options you can easily set from your `config.toml` file.
 
-This text will appear after the Title of your site in your `<title>` meta tag:
+This text will appear after the Title of your site in your `<title>` meta tag, and after the Title in the sidebar:
 
 	description = "A Hugo Theme built with Bootstrap"
 
 
 ### Sidebar
 
-This text will appear in the sidebar immediately under your site's Title:
-
-	sidebarDescription = "A Hugo Theme built with Bootstrap"
-
-This text will appear in a free paragraph below the Title & sidebarDescription and above the menu links. Set it to "" if you don't want it.
+This text will appear in a free paragraph below the Title & Description and above the menu links. Set it to "" if you don't want it.
 
 	sidebarFreeText = "A optional paragraph of free text. Set to blank in config.toml to clear..."
 
@@ -94,7 +90,6 @@ Using a theme is as simple as changing the `colorScheme` param in your `config.t
 		colorScheme = "scheme-darkbrown"
 		DateFormat = "2 Jan 2006"
 		description = "A Hugo Theme built with Bootstrap"
-		sidebarDescription = "A Hugo Theme built with Bootstrap"
 		sidebarFreeText = "A optional paragraph of free text. Set to blank in config.toml to clear..."
 
 
@@ -150,7 +145,6 @@ Here is a full example `config.toml`:
 		colorScheme = "scheme-darkbrown"
 		DateFormat = "2 Jan 2006"
 		description = "A blog about content"
-		sidebarDescription = "This is my blog about content"
 		sidebarFreeText = "A optional paragraph of free text. Set to blank in config.toml to clear..."
 		piwikSiteID = ""
 		piwikURL = ""
