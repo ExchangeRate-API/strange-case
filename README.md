@@ -49,14 +49,22 @@ This text will appear in a free paragraph below the Title & Description and abov
 
 	sidebarFreeText = "A optional paragraph of free text. Set to blank in config.toml to clear..."
 
-You can also include useful menu links by including `"menu=main"` items in your `config.toml`. Example:
+You can include clickable icons (e.g. for social networks )by including `"menu=icons"` items in your `config.toml`. Example:
+
+	[[menu.icons]]
+		name = "GitHub"
+		post = "<img src=\"/images/github.png\""
+		url = "https://github.com"
+
+You can optionally use the `post` var to include HTML after the `name` in the resulting links.
+You can include useful menu links by including `"menu=main"` items in your `config.toml`. Example:
 
 	[[menu.main]]
 		name = "Hugo"
 		post = "<span class='glyphicon glyphicon-fire'></span>"
 		url = "http://gohugo.io"
 
-You can optionally use the `pre` and `post` vars to include HTML before or after the `name` in the resulting links.
+You can optionally use the `post` var to include HTML after the `name` in the resulting links.
 
 You can use the `"contact_email"` field in `[params]` to set a mailto: link the in the sidebar. Leave blank if you don't want it.
 

@@ -76,7 +76,6 @@ img {
 
 /* SIDEBAR */
 
-
 .sidebar {
 	padding: 2em;
 	font-size: 1.3em;
@@ -97,6 +96,9 @@ img {
 .sidebar .sidebar-menus li {
 	list-style: none;
 	font-size:1em;
+}
+.sidebar .sidebar-icons li {
+        display: inline-block;
 }
 .sidebar .sidebar-recent {
 	margin-top: 1.5em;
