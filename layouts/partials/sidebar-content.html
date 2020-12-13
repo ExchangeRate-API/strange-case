@@ -23,13 +23,13 @@
                 </ul>
 
 		<div class="sidebar-recent hidden-xs">
-			<p>Recent Posts:</p>
-			<ul>
-				{{ range first 5 .Site.Pages }}
-				<li><a href="{{.Permalink}}">{{ .Title }}</a></li>
-				{{ end }}
-			</ul>
-		</div>
+                  <p>Recent Posts:</p>
+                  <ul>
+                    {{ range first 5 (where .Site.RegularPages "Section" "posts") }}
+                      <li><a href="{{.Permalink}}">{{ .Title }}</a></li>
+                    {{ end }}
+                  </ul>
+                </div>
 
 		{{ if .Site.Params.contact_email }}
 		<div class="sidebar-contact">
