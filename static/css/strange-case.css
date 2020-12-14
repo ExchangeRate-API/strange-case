@@ -51,6 +51,9 @@ img {
 .post {
 	margin-bottom: 3em;
 }
+.post a {
+    text-decoration: underline;
+}
 .post .post-heading {
 	margin-bottom: 1em;
 }

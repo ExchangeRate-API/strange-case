@@ -13,7 +13,7 @@
 
 					<div class="post-heading">
 						<h1>{{ .Title }}</h1>
-						<span class="post-date"><a href="{{ .Permalink }}"># {{ .Date.Format "Jan 2, 2006" }}{{ if .Params.author }} by {{ .Params.author }}{{ end }}</a></span>
+						<span class="post-date"># {{ .Date.Format "Jan 2, 2006" }}{{ if .Params.author }} by {{ .Params.author }}{{ end }}</span>
 					</div>
 
 					{{ .Content }}
